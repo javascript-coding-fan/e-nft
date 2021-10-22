@@ -1,0 +1,26 @@
+{
+  "name": "@blockchain-in-a-box/cache",
+  "version": "0.1.0",
+  "description": "Cache Server for Blockchain-in-a-Box",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "sudo $(which node) src/index.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrfoundation/blockchain-in-a-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xrfoundation/blockchain-in-a-box/issues"
+  },
+  "homepage": "https://github.com/xrfoundation/blockchain-in-a-box#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.0.0",
+    "web3": "^1.3.5"
+  }
+}

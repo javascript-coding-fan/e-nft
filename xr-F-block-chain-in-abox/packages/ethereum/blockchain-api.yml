@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blockchain-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: blockchain-api
+  template:
+    metadata:
+      labels:
+        app: blockchain-api
+    spec:
+      containers:
+      - name: blockchain-api
+        image: swpnit/blockchain-api:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "1024Mi"
+            cpu: ".5"
+          limits:
+            memory: "2048Mi"
+            cpu: "2"
