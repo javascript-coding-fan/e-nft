@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Jost:lighter,regular,bold,bolder,italic&subset=latin,latin-ext');
+
+
+::placeholder {
+  opacity: .4; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity: .4;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  opacity: .4;
+}
+
+body {
+  overflow: scroll;
+}
+
+.header {
+  padding: 20px;
+
+  .header-address {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1em;
+    color: #A1A1A1;
+    margin-top: 7px;
+    margin-left: 20px;
+  }
+}
+.header img {
+  width: 40px;
+}
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & * {
+    font-family: Jost;
+  }
+
+  .addNFT-btn {
+    text-align: center;
+    background: #F8F8F8;
+    border-radius: 3px;
+    width: 105px;
+    height: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    .round-btn {
+      font-size: 40px;
+      font-weight: 100;
+      background: #CFCFCF;
+      border-radius: 200px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+      line-height: 1em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-name {
+      font-family: sans-serif;
+      margin-top: 10px;
+      font-size: 13px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      color: #9b9b9b;
+      font-weight: 100;
+      padding: 2px;
+    }
+  }
+  .inputForm {
+    background: #F8F8F8;
+    padding: 20px 20px 40px;
+    margin: 50px 0 100px;
+
+    .close-btn {
+      background: #9B9B9B;
+      border-radius: 200px;
+      width: 29px;
+      height: 29px;
+      font-size: 35px;
+      position: absolute;
+      line-height: 0.4em;
+      padding: 4px;
+      color: #fff;
+      font-weight: 100;
+      transform: translate(564px, -33px) rotate(-135deg);
+      cursor: pointer;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    .submit-btn {
+      cursor: pointer;
+    }
+
+    .form-item {
+      // display: flex;
+      margin-top: 17px;
+
+      label {
+        color: #515151;
+        font-size: 23px;
+      }
+      input, p {
+        // color: #9E9E9E;
+        font-weight: 100;
+        border: none;
+        padding: 14px 11px;
+        width: 90%;
+        font-size: 15px;
+        letter-spacing: .03em;
+        background-color: #fff;
+
+      }
+    }
+    .submit-btn {
+      background-color: #9b9b9b;
+      padding: 10px 50px;
+      width: fit-content;
+      margin-top: 20px;
+      border-radius: 5px;
+      letter-spacing: .1em;
+      color: #fff;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+  .result-panel {
+    .form-item {
+      p {
+        color: #000;
+      }
+    }
+    img {
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+
+.container-client {
+  max-width: 600px;
+  margin: 60px auto;
+
+  img {
+    width: 100%;
+  }
+  h3 {
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.2em;
+    color: #515151;
+  }
+}
+
+.share-btn img {
+  position: fixed;
+  width: 100px;
+  bottom: 50px;
+  right: 50px;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.gallery-client {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  padding: 50px 2vw;
+
+  .gallery-item {
+    
+    a {
+      text-decoration: none;
+
+      .gallery-title {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.switch-wrapper > div {
+  position: relative;
+}

@@ -1,0 +1,4 @@
+{"level":"info","message":"GET /login/2f7f0ef2525e849cb8a1e487d15b9275 302 204.087 ms - 658","timestamp":"2021-11-30 20:41:47"}
+{"level":"info","message":"GET /login/6a8b27e35e8724c02de154ba09d03cf8 302 11.308 ms - 658","timestamp":"2021-11-30 21:15:39"}
+{"level":"info","message":"GET /login/6a8b27e35e8724c02de154ba09d03cf8 302 10.456 ms - 658","timestamp":"2021-11-30 21:16:50"}
+{"level":"info","message":"GET /login/6a8b27e35e8724c02de154ba09d03cf8 302 20.211 ms - 658","timestamp":"2021-11-30 21:17:49"}

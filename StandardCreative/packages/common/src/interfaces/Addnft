@@ -1,0 +1,32 @@
+import { CreatorShort } from './Creator'
+export interface AddnftShort {
+  id: number
+  contractAddress: string
+  tokenId: string
+}
+
+export interface Addnft extends AddnftShort {
+  creator: CreatorShort
+  contractAddress: string
+  tokenId: string
+  route: string
+  displayName: string
+  imgUrl: string
+}
+
+export interface AddnftDatabaseRow {
+  id: number
+  creator: CreatorShort
+  contractAddress: string
+  tokenId: string
+  route: string
+  displayName: string
+  imgUrl: string
+}
+
+export interface AddnftResult {
+	data: Addnft[]
+	total: number
+  limit: number
+  skip: number
+}

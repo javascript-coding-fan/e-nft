@@ -1,0 +1,62 @@
+.main {
+	.bid-container.history-container {
+		display: block;
+
+		.controll-wrapper {
+			height: auto;
+
+			.control-btns {
+				margin: auto;
+			}
+		}
+
+		.bid-single {
+			width: auto;
+
+			.bid-view.winner-view {
+				height: auto;
+
+				.winner-name {
+					font-family: Jost;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 26px;
+					text-transform: uppercase;
+					text-decoration-line: none;
+					color: #9f9f9f;
+
+					span {
+						text-transform: none;
+					}
+				}
+
+				.win-date {
+					span {
+						text-transform: none;
+					}
+				}
+			}
+		}
+
+		.records.bid-history {
+			font-family: Jost;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 26px;
+			text-transform: uppercase;
+			color: #9f9f9f;
+			padding: 20px;
+
+			.item {
+				width: auto;
+				justify-content: space-around;
+
+				.item-name {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

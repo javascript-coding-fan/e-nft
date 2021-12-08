@@ -1,0 +1,65 @@
+{
+	"name": "@standardcreative/client",
+	"version": "0.4.10",
+	"private": true,
+	"engines": {
+		"node": ">= 16.3.0"
+	},
+	"npmClient": "npm",
+	"jest": "ts-jest",
+	"scripts": {
+		"check-errors": "tsc --noEmit",
+		"dev": "vite --host",
+		"build": "cross-env APP_ENV=production NODE_OPTIONS=--max_old_space_size=6144 vite build && cp src/server.js www/server.js",
+		"validate": "npm run test",
+		"serve": "vite --host",
+		"start": "cp src/server.js www/server.js && node www/server.js"
+	},
+	"resolutions": {
+		"socket.io": "4.3.1",
+		"@types/react": "17.0.30",
+		"react": "17.0.2"
+	},
+	"peerDependencies": {
+		"@types/react": "^17.0.0",
+		"react": "^17.0.2",
+		"socket.io": "4.3.1"
+	},
+	"dependencies": {
+		"@material-ui/core": "4.12.3",
+		"@standardcreative/client-core": "^0.4.10",
+		"@standardcreative/common": "^0.4.10",
+		"app-root-path": "3.0.0",
+		"buffer": "^6.0.3",
+		"ethers": "^5.5.1",
+		"formik": "2.2.9",
+		"ipfs-http-client": "^53.0.1",
+		"react": "^17.0.2",
+		"react-dom": "17.0.2",
+		"react-pdf": "5.4.1",
+		"react-redux": "^7.1.20",
+		"react-router-transition": "2.1.0",
+		"react-video-recorder": "3.19.1",
+		"redux": "^4.1.2",
+		"redux-thunk": "^2.4.0",
+		"sass": "1.43.2",
+		"web3": "^1.6.0"
+	},
+	"devDependencies": {
+		"@types/node": "14.17.27",
+		"@types/react": "17.0.30",
+		"@types/react-dom": "17.0.9",
+		"@types/react-redux": "^7.1.20",
+		"@walletconnect/web3-provider": "^1.6.6",
+		"authereum": "^0.1.14",
+		"config": "3.3.6",
+		"cross-env": "7.0.3",
+		"eslint": "8.0.1",
+		"typescript": "4.4.4",
+		"vite": "2.6.10"
+	},
+	"browser": {
+		"fs": false
+	},
+	"license": "ISC"
+}
